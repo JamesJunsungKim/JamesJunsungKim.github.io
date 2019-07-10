@@ -569,8 +569,8 @@ for small screen(<720px):
 #post-list .post-title,
 #post-list .post-excerpt,
 #post-list .post-tags {
-    margin: 0 160px 0 0; /* 160px = 60(spacing from .post-author) + 140(.post-author width) - 40(padding-left) */
-    max-width: 620px;
+    /* margin: 0 160px 0 0; 160px = 60(spacing from .post-author) + 140(.post-author width) - 40(padding-left) */
+    /* max-width: 620px; */
 }
 
 #post-list .post-title {
