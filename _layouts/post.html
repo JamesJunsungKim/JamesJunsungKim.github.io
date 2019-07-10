@@ -30,18 +30,20 @@ layout: default
             </div>
             <p id="author-name">{{ author.name }}</p>
         </a>
-        <p id="post-date">{{ page.date | date: '%Y-%m-%d %H:%M' }}</p>
-        <a id="post-more" href="{{ author.url }}">
-            <span>Read more posts by this author</span>
-        </a>
+        <!-- <p id="post-date">{{ page.date | date: '%Y-%m-%d %H:%M' }}</p> -->
+
+        <div id="post-more"> 
+            <span>What we don't undertsand today will get us further in future.</span>
+        </div>
+
     </div>
 </div>
 
-<div class="container" style="margin-top:25px; padding:0px">
+<!-- <div class="container" style="margin-top:25px; padding:0px">
     <a href="https://careers.kakao.com/jobs/P-11234"><img src="/files/career201907.jpg" style="width:100%;"></a>
-</div>
+</div> -->
 
-<div id="post-links" class="container">
+<!-- <div id="post-links" class="container">
     {% assign prev = page.previous %}
     {% if prev %}
         <div id="post-prev"
@@ -62,7 +64,7 @@ layout: default
             </div>
         </div>
     {% endif %}
-</div>
+</div> -->
 
 <div id="lightbox">
     <div id="lightbox-image"></div>

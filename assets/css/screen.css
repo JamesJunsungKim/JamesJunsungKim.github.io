@@ -988,7 +988,7 @@ body.tag-template #navbar {
 
 #author-name {
     position: absolute;
-    top: 44px; /* 120 = a + (14 + 6 + 12) + a, a = (120 - (14 + 6 + 12)) / 2, a = 44px */
+    top: 50px; /* 120 = a + (14 + 6 + 12) + a, a = (120 - (14 + 6 + 12)) / 2, a = 44px */
     left: 75px; /* 75px = 60(#author-image width) + 15(spacing) */
     margin: 0;
     font-size: 14px;
@@ -1004,13 +1004,12 @@ body.tag-template #navbar {
 
 #post-more {
     position: absolute;
-    top: 0;
-    right: 0;
-    height: 120px;
-    line-height: 120px;
-    padding-right: 17px; /* 17px = 10(spacing) + 7(icon width) */
-    background: url(../images/pc/icon_rarrow.png) no-repeat right;
-    background-size: 7px 11px;
+    top: 44px;
+    left: 170px;
+    padding-right: 10px; /* 17px = 10(spacing) + 7(icon width) */
+    /* background: url(../images/pc/icon_rarrow.png) no-repeat right; */
+    /* background-size: 7px 11px; */
+    vertical-align: middle;
     font-size: 14px;
 }
 
