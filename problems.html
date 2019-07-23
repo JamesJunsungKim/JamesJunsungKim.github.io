@@ -1,0 +1,65 @@
+---
+layout: page
+title: Problems I solved along with my journey
+permalink: /problems/
+sitemap: no
+excerpt: 
+tags: []
+---
+
+<h1 class="main-title">Problems I've faced that made me contemplate for a while</h1>
+
+<div class="problem-element">
+    <div class="problem-element-title">iOS Local Notification for different time settings</div>
+    
+    <div class="problem-element-description-question">Situation</div>
+    <div class="problem-element-description-answer">I wanted to create a feature that allows a user to set a notification triggered from a past time with variety of reoccuring rules</div>
+
+    <div class="problem-element-description-question">Cause</div>
+    <div class="problem-element-description-answer">Apple provides UNCalendarNotificationTrigger, UNTimeIntervalNotificationTrigger, and UNLocationNotificationTrigger
+        but any combination of those didn't seem to create the best solution to the problem I had.
+        <br>
+        For example, a user wants to create an notification that triggers a notification every month from January 31 2018.
+        <br>
+        Since there are certain months that don't have 31 so I couldn't just create DateComponent(day: 31) and use UNCalendarNotificationTrigger for this matter.
+        <br>
+    </div>
+
+    <div class="problem-element-description-question">Solution</div>
+    <div class="problem-element-description-answer">I realized by this point that I can't use the trigger with repeats value being true. 
+        <br>
+        I changed my approach to this and decided to create 10 notifications whenever a user launches the app. 
+        <br>
+        A flow would be like, a user launches the app -> Remove 10 notifications and create 10 notifications based on the status of the last notification.
+    </div>
+
+    <a href="{{ base_path }}/projects/python/rib_test_generator" class="resume-button-gray">More Details in Blog</a>
+</div>
+
+<div class="problem-element">
+        <div class="problem-element-title">iOS Local Notification for different time settings</div>
+        
+        <div class="problem-element-description-question">Situation</div>
+        <div class="problem-element-description-answer">I wanted to create a feature that allows a user to set a notification triggered from a past time with variety of reoccuring rules</div>
+    
+        <div class="problem-element-description-question">Cause</div>
+        <div class="problem-element-description-answer">Apple provides UNCalendarNotificationTrigger, UNTimeIntervalNotificationTrigger, and UNLocationNotificationTrigger
+            but any combination of those didn't seem to create the best solution to the problem I had.
+            <br>
+            For example, a user wants to create an notification that triggers a notification every month from January 31 2018.
+            <br>
+            Since there are certain months that don't have 31 so I couldn't just create DateComponent(day: 31) and use UNCalendarNotificationTrigger for this matter.
+            <br>
+        </div>
+    
+        <div class="problem-element-description-question">Solution</div>
+        <div class="problem-element-description-answer">I realized by this point that I can't use the trigger with repeats value being true. 
+            <br>
+            I changed my approach to this and decided to create 10 notifications whenever a user launches the app. 
+            <br>
+            A flow would be like, a user launches the app -> Remove 10 notifications and create 10 notifications based on the status of the last notification.
+        </div>
+    
+        <a href="{{ base_path }}/projects/python/rib_test_generator" class="resume-button-gray">More Details in Blog</a>
+    </div>
+    
