@@ -15,7 +15,7 @@
 
     <ul id="menu" class="nav">
         <li class="{% if page.url != '/opensource/' and page.url != '/openapi/' and page.url != '/events/' %} active {% endif %}"><a href="{{ base_path }}/">Blog</a></li>
-        <li class="{% if page.url == '/openapi/' %} active {% endif %}"><a href="{{ base_path }}/openapi/">Projects</a></li>
+        <li class="{% if page.url == '/projects/' %} active {% endif %}"><a href="{{ base_path }}/projects/">Projects</a></li>
         <li class="{% if page.url == '/events/' %} active {% endif %}"><a href="{{ base_path }}/events/">Life As Developer</a></li>
         <li class="{% if page.url == '/opensource/' %} active {% endif %}"><a href="{{ base_path }}/opensource/">More</a></li>
     </ul>

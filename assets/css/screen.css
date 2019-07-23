@@ -59,7 +59,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 .container {
-    max-width: 940px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-right: 5px;
@@ -837,7 +837,7 @@ body.tag-template #navbar {
 #post-content {
     position: relative;
     margin: 0 40px;
-    padding: 70px 40px 100px 40px; /* 40(margin) + 40(padding) = 80 */
+    padding: 50px 10px 100px 10px; /* 40(margin) + 40(padding) = 80 */
     border-bottom: 1px solid #e6e6e6;
     font-size: 16px;
     line-height: 28px; /* 28px = 16(font-size) + 12(line-spacing) */
@@ -845,7 +845,7 @@ body.tag-template #navbar {
 }
 
 #post-content h1 {
-    margin: 70px 0 30px 0;
+    margin: 50px 0 30px 0;
     font-size: 26px;
 }
 
@@ -1124,6 +1124,99 @@ body.tag-template {
 body.page-template {
 
 }
+
+/* Project Portfolio */
+.main-title { 
+    line-height: 1;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.subtitle {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    /* padding-left: 10px; */
+}
+
+.timeline { 
+    font-size: 15px;
+}
+
+.post-content .timeline .h6 { 
+    margin: 0px !important;
+    font-size: 15px;
+}
+
+.timeline ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.timeline_element {
+    position: relative;
+    overflow: hidden;
+}
+
+.timeline_element:first-child 
+.timeline_element-date {
+    padding-top: 0;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.timeline_element:first-child 
+.timeline_element-date 
+.timeline_element-date-text {
+    margin-top: -10px;
+    display: block;
+}
+
+.timeline_element-date {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 130px;
+    padding: 30px 15px;
+    color: #999;
+    text-align: right;
+    font-style: italic;
+    line-height: 30px;
+    border-right: 1px solid #ddd;
+}
+
+.timeline_element:first-child
+.timeline_element-contents {
+    padding-top: 0;
+}
+
+.timeline_element-contents {
+    padding: 30px 0;
+    margin-left: 160px;
+    overflow: hidden;
+}
+
+.timeline_element
+.project-text {
+    width: auto;
+    float: none;
+}
+
+.project-title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: .3em;
+    -webkit-font-smoothing: antialiased;
+}
+
+.proejct-description {
+
+}
+
 
 #forkme {
     position: absolute;
