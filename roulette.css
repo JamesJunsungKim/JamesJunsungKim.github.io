@@ -1,0 +1,114 @@
+
+.block { 
+  padding: 40px 20px 0px 20px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+
+.title { 
+  text-align: center;
+  font-size: 50px;
+}
+
+.description { 
+  padding-top: 20px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.block
+.container { 
+  padding-top: 40px;
+}
+
+.hide_at_first { 
+  display: none;
+}
+
+.done_container { 
+  padding: 40px 20px 0px 20px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  text-align: center;
+}
+
+.block
+.center-container { 
+  text-align: center;
+  padding-top: 40px;
+}
+
+.blcok 
+.unavailable_container { 
+  padding-bottom: 40px;
+}
+
+.container-left-element { 
+  display: inline;
+  padding-right: 20px;
+}
+
+.container-right-element { 
+  display: inline;
+}
+
+.warning { 
+  padding-top: 10px;
+  color: red;
+  text-decoration: underline;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+  
+button {
+  background-color: rgb(244, 224, 74);
+  color: rgb(30, 30, 30);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+  
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.canvas { 
+  width: 100%;
+  display: block;
+}
