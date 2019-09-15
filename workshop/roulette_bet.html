@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Kakaobank Workshop</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 minimum-scale=1, maximum-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+    <script src="https://www.gstatic.com/firebasejs/6.6.0/firebase.js"></script>
+</head>
+
+<body>
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form">
+					<span class="login100-form-title p-b-26">
+                        Kakaobank<br>
+                        Mobile Workshop
+                    </span>
+
+                    <div class="modal" id="popup"> 
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <div class="message">what do you want?</div>
+                        </div>
+                    </div>
+
+                    <div class="initially-hidden">
+                        <div class="center-container"> 
+                            <div class="name_label container-left-element">유저이름: </div>
+                            <div class="name container-right-element" id="user_name"></div>
+                        </div>
+            
+                        <div class="center-container"> 
+                            <div class="name_label container-left-element">현재 라운드: </div>
+                            <div class="name container-right-element" id="current_round">2</div>
+                        </div>
+            
+                        <div class="center-container"> 
+                            <div class="name_label container-left-element">현재 상품: </div>
+                            <div class="name container-right-element" id="current_raffle_item">오징어</div>
+                        </div>
+            
+                        <div class="center-container"> 
+                            <div class="name_label container-left-element">배팅한 코인: </div>
+                            <div class="name container-right-element" id="betted_coins">0</div>
+                        </div>
+            
+                        <div class="center-container p-b-25"> 
+                            <div class="name_label container-left-element">남은 코인: </div>
+                            <div class="name container-right-element" id="available_coins">3</div>
+                        </div>
+                    </div>
+                    
+
+                    <div id="input_container">
+                        <div class="wrap-input100 validate-input" data-validate = "your input is incorrect.">
+                            <input class="input100" type="tel" name="coins" id="number_of_coins">
+                            <span class="focus-input100" data-placeholder="배팅하실 코인 갯수"></span>
+                        </div>
+    
+                        <div class="container-login100-form-btn">
+                            <div class="wrap-login100-form-btn">
+                                <div class="login100-form-bgbtn"></div>
+                                <button class="login100-form-btn" id="betting-button">
+                                    배팅하기
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="center-container hide_at_first" id="unavailable_container">
+                        <h3>게임이 진행중입니다.</h1>
+                    </div>
+					
+
+					<div class="text-center p-t-40">
+						<span class="txt1">
+                            투자된 코인은 돌려 받으실 수 없어요.<br>
+                            당첨여부는 화면을 참고해 주세요!
+						</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	
+<!--===============================================================================================-->
+	<script src="/workshop/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/workshop/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+    <script src="/workshop/vendor/bootstrap/js/popper.js"></script>
+    <script src="/workshop/vendor/bootstrap/js/popper.min.js"></script>    
+
+<!--===============================================================================================-->
+	<script src="/workshop/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/workshop/vendor/daterangepicker/moment.min.js"></script>
+	<script src="/workshop/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="/workshop/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+    <script src="/workshop/js/bet.js"></script>
+
+</body>
+</html>
