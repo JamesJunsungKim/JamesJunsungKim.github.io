@@ -108,7 +108,12 @@ span.psw {
   padding-top: 16px;
 }
 
-.canvas { 
+#canvas { 
+  text-align: center;
+  position: relative;
   width: 100%;
-  display: block;
+}
+
+.roulette-button { 
+  position: relative;
 }
