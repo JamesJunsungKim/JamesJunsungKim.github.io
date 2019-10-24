@@ -265,9 +265,21 @@ window.onresize = function(event) {
 
 })();
 
-function resetGameData() { 
+function resetGameData( ) { 
   bet_ref.set("");
   roulette_array = [""];
   // roulette_array = [1,2,3,4,5,6,7,8];
   drawRouletteWheel();
+}
+
+function give_everyone(numberOfCoins) { 
+  let names = ["janice_song", "bernard_park", "jino_h", "loopy_s", "kevin_yj", "joe_cho", "woody_422", "charlie_brown", "leo_kang", "mathew_l", "noah_oh", "derek_lee", "azki_org", "hana_zn", "mata_j", "owen_kwon", "ggikko_park", "sally_kim", "frank_han", "zoey_lee", "wind_seo","groot_iam", "leo_jungle", "soy_h", "fred_k", "june_han", "nick_lee", "gray_oh", "alex_260", "cindy_k", "leonardo_kim", "henry_jung", "alan_kim", "panini_kim", "damon_ahn", "michael_lee", "neal_p", "spock_p"]
+
+  names.forEach(function(name) { 
+  let ref = firebase.database().ref('/member/'+ name+'/available_coins')
+  ref.once('value').then(function(snapshot) { 
+  let current_coins = snapshot.val();
+  ref.set(current_coins+numberOfCoins);
+  }); 
+  }) 
 }
