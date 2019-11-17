@@ -1,9 +1,256 @@
 ---
 layout: home
 ---
-<ul id="post-list">
-    {% for post in paginator.posts %}
-        {% include item.html %}
-    {% endfor %}
-</ul>
-{% include pagination.html %}
+
+<div id="post-content" class="post page" role="main">
+    <h1 class="main-title">Projects</h1>
+    
+    <strong class="subtitle"> All of the proejcts I've worked on are presented in a chronological order</strong>
+    <div class = "timeline">
+        <ul>
+            <li class= "timeline_element timeline_element--now ">
+                <div class="timeline_element-date">
+                    <time class="timeline_element-date-text">Now</time>
+                </div>
+                
+                <div class="timeline_element-contents">
+                    <div class="project-text">
+                        <div class="project-title"> KakaoBank </div>
+                        <div class="project-description"> My role:  </div>
+                        <strong>Basic stats for the app</strong>
+                        <ul class="project-stats-list">
+                            <li>DAU: 100</li>
+                            <li>DAU: 100</li>
+                            <li>DAU: 100</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+    
+            <li class= "timeline_element timeline_element--now ">
+                <div class="timeline_element-continuous-date">
+                    <time class="timeline_element-date-text">2019.7 ~ 2019.8</time>
+                </div>
+                
+                <div class="timeline_element-contents">
+                    <div class="project-text">
+                        <div class="project-title">Script to generate Unit Test for RIB files</div>
+                        <div class="project-description">After implementing the RIB architecture into the work's environment, I recommended that everyone in iOS team create a unit test code for our code.
+                            <br>
+                            But it involes a lot of boilerplate code so I created a script to automatically generate a unit test mock and test codes.
+                        </div>
+                        <strong>Features are as follows:</strong>
+                        <ul class="project-stats-list">
+                            <li>Iterate over all RIB files and create unit test files if needed.</li>
+                            <li>Create a mock of every element in RIB structure.</li>
+                            <li>Create a test code of each element without only result part.</li>
+                        </ul>
+                    </div>
+                    <img src="/assets/images/random.png" class="project-image-horizontal">
+    
+                    <a href="{{ base_path }}/projects/python/rib_test_generator" class="button button-gray">More details</a>
+                    <a href="https://github.com/uber/RIBs" class="button button-gray">View Code</a>
+    
+                    <div class="project-technologies">
+                        <div class="technologies-title">tag</div>
+                        <div class="tech-tags">
+                            <a href="" class="tag-element">python</a>
+                            <a href="" class="tag-element">swift</a>
+                            <a href="https://www.kakaobank.com/" class="tag-element">Kakaobank</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+    
+            <li class= "timeline_element timeline_element--now ">
+                <div class="timeline_element-continuous-date">
+                    <time class="timeline_element-date-text">2019.4 ~ 2019.7</time>
+                </div>
+                
+                <div class="timeline_element-contents">
+                    <div class="project-text">
+                        <div class="project-title">Telescope - Subscription Tracker </div>
+                        <div class="project-description">Telescope is an app that helps you keep a track of your subscription and reoccurring services. </div>
+                        <strong>Features are as follows:</strong>
+                        <ul class="project-stats-list">
+                            <li>Built on a framework of RIBs.</li>
+                            <li>Custom Notification for reoccurring transactions.</li>
+                            <li>Localization for Korean and English.</li>
+                            <li>UI created 100% programmatically.</li>
+                        </ul>
+    
+                        <div class="project-image-vertical-box">
+                            <img src="/assets/images/projects/telescope_first.jpg" class="project-image-vertical">
+                            <img src="/assets/images/projects/telescope_second.jpg" class="project-image-vertical">
+                            <img src="/assets/images/projects/telescope_third.jpg" class="project-image-vertical">
+                        </div>
+                        
+                        <a href="{{ base_path }}/projects/swift/telescope" class="button button-gray">More details</a>
+                        <a href="https://apps.apple.com/us/app/telescope-track-subscription/id1473720868?ls=1" class="button button-gray">Download</a>
+    
+                        <div class="project-technologies">
+                                <div class="technologies-title">tag</div>
+                                <div class="tech-tags">
+                                    <a href="" class="tag-element">swift</a>
+                                    <a href="" class="tag-element">core data</a>
+                                    <a href="" class="tag-element">rib</a>
+                                    <a href="" class="tag-element">side project</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+    
+            <li class= "timeline_element timeline_element--now ">
+                <div class="timeline_element-continuous-date">
+                    <time class="timeline_element-date-text">2019.3 ~ 2019.5</time>
+                </div>
+                
+                <div class="timeline_element-contents">
+                    <div class="project-text">
+                        <div class="project-title">Stock Account Feature</div>
+                        <div class="project-description">Users now can open a 3rd party stock account through Kakaobank via this feature.
+                            <br>
+                            The number of accounts opened through this so far: ~ 400,000.
+                        </div>
+    
+                        <strong>Things I paid the attention to the most are as follows:</strong>
+                        <ul class="project-stats-list">
+                            <li>Logic to handle numerous possible errors.</li>
+                            <li>User Data Encrpytion.</li>
+                            <li>Created the flow that controls the whole process.</li>
+                            <li>Gather data by firing the log API where needed.</li>
+                        </ul>
+    
+                        <div class="project-image-vertical-box">
+                                <img src="/assets/images/projects/stock_account_first.PNG" class="project-image-vertical">
+                                <img src="/assets/images/projects/stock_account_second.PNG" class="project-image-vertical">
+                                <img src="/assets/images/projects/stock_account_third.PNG" class="project-image-vertical">
+                        </div>
+    
+                        <a href="{{ base_path }}/projects/swift/telescope" class="button button-gray">More details</a>
+    
+                        <div class="project-technologies">
+                                <div class="technologies-title">tag</div>
+                                <div class="tech-tags">
+                                    <a href="" class="tag-element">Swift</a>
+                                    <a href="" class="tag-element">ReactorKit</a>
+                                    <a href="https://www.kakaobank.com/" class="tag-element">KakaoBank</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+    
+    
+            <li class= "timeline_element timeline_element--now ">
+                <div class="timeline_element-continuous-date">
+                    <time class="timeline_element-date-text">2018.9 ~ 2018.11</time>
+                </div>
+                
+                <div class="timeline_element-contents">
+                    <div class="project-text">
+                        <div class="project-title">Closures - Diary</div>
+                        <div class="project-description">Closure is my first side project designed to implemenet things I couldn't at work.
+                        I created it from scratch to release by myself.    
+                        </div>
+                        <strong>Features are as follows:</strong>
+                        <ul class="project-stats-list">
+                            <li>Core Data</li>
+                            <li>PassCode Scene and TouchID/FaceID</li>
+                            <li>Calender & Graph</li>
+                            <li>Fetch Photos from device and handling logics</li>
+                            <li>UI created 100% programmatically.</li>
+                        </ul>
+    
+                        <div class="project-image-vertical-box">
+                                <img src="/assets/images/projects/closure_first.jpg" class="project-image-vertical">
+                                <img src="/assets/images/projects/closure_second.jpg" class="project-image-vertical">
+                                <img src="/assets/images/projects/closure_third.jpg" class="project-image-vertical">
+                        </div>
+    
+                        <a href="{{ base_path }}/projects/swift/telescope" class="button button-gray">More details</a>
+                        <a href="https://apps.apple.com/us/app/closures/id1436435306?ls=1" class="button button-gray">Download</a>
+    
+                        <div class="project-technologies">
+                                <div class="technologies-title">tag</div>
+                                <div class="tech-tags">
+                                    <a href="" class="tag-element">swift</a>
+                                    <a href="" class="tag-element">core data</a>
+                                    <a href="" class="tag-element">mVVM</a>
+                                    <a href="" class="tag-element">side project</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+    
+    
+            <li class= "timeline_element timeline_element--now ">
+                    <div class="timeline_element-continuous-date">
+                        <time class="timeline_element-date-text">2018.2 ~ 2018.10</time>
+                    </div>
+                    
+                    <div class="timeline_element-contents">
+                        <div class="project-text">
+                            <div class="project-title">ENEOS iPad</div>
+                            <div class="project-description">ENEOS POS iPad is a point of sale based system providing car customised features to customers. This app is similar to the SBRAND POS iPad that I had been working before but differences will be having more features and new database schema. This app will be aimed to launch and use all ENEOS shop over Japan. </div>
+                            <strong>My contributions are as follows:</strong>
+                            <ul class="project-stats-list">
+                                <li>Converted objective-c/swift 2 to swift 4.</li>
+                                <li>Implemented MVVM architecture.</li>
+                                <li>Implemented easier release with fastlane.</li>
+                                <li>Created multiple big features. Check more details.</li>
+                            </ul>
+        
+                            <img src="/assets/images/projects/ENEOS.PNG" class="project-image-horizontal">
+                            
+                            <a href="{{ base_path }}/projects/swift/telescope" class="button button-gray">More details</a>
+                            
+                            <div class="project-technologies">
+                                    <div class="technologies-title">tag</div>
+                                    <div class="tech-tags">
+                                        <a href="" class="tag-element">swift</a>
+                                        <a href="" class="tag-element">fastlane</a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+            </li>
+    
+            <li class= "timeline_element timeline_element--now ">
+                <div class="timeline_element-continuous-date">
+                    <time class="timeline_element-date-text">2018.1 ~ 2018.2</time>
+                </div>
+                
+                <div class="timeline_element-contents">
+                    <div class="project-text">
+                        <div class="project-title">Transaction Signing DLL</div>
+                        <div class="project-description">HomePro, thai version of iKEA, needed a faster/safer way to get user's transactions sigined by the thailand tax department.
+                            <br>
+                            so I went with gRPC because it can be used cross-platforms and way safer to parse datas between when sending and when receiving it.
+                            <!-- <br> -->
+                        </div>
+                        <strong>Features are as follows:</strong>
+                        <ul class="project-stats-list">
+                            <li>When failing, it's added to a sql file and resume it when possible.</li>
+                            <li>Made it as a library with only needed high level functions exposed</li>
+                            <li>Calculated how many signings are done successfully in 1 minute for admins</li>
+                        </ul>
+    
+                        <!-- <a href="{{ base_path }}/projects/swift/telescope" class="button button-gray">More details</a> -->
+                        
+                        <div class="project-technologies">
+                                <div class="technologies-title">tag</div>
+                                <div class="tech-tags">
+                                    <a href="" class="tag-element">C++</a>
+                                    <a href="https://grpc.io/" class="tag-element">gRPC</a>
+                                    <a href="https://www.sqlite.org/index.html" class="tag-element">SQL</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+        </li>
+        </ul>
+    </div>
+</div>

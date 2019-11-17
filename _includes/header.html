@@ -2,24 +2,16 @@
     <button id="menu-toggle" type="button">
         <span class="sr-only">Toggle Navigation Menu</span>
     </button>
-    <button id="search-toggle" type="button">
-        <span class="sr-only">Toggle Search Form</span>
-    </button>
+
     <a id="logo" href="/">
         <span class="sr-only">KakaoTech</span>
     </a>
-    <div id="search">
-        <input id="search-input" type="search" placeholder="Search..." value="" />
-    </div>
+
     <ul class="search__results" id="results-container"></ul>
 
     <ul id="menu" class="nav">
-        <li class="{% if page.url != '/projects/' and page.url != '/problems/' and page.url != '/more/' and page.url != '/life_events/' and page.url != '/resume/' %} active {% endif %}">
-            <a href="{{ base_path }}/">Blog</a>
-        </li>
-        <li class="{% if page.url == '/projects/' %} active {% endif %}"><a href="{{ base_path }}/projects/">Projects</a></li>
-        <li class="{% if page.url == '/problems/' %} active {% endif %}"><a href="{{ base_path }}/problems/">Problems I solved</a></li>
-        <li class="{% if page.url == '/more/' or page.url == '/life_events/' or page.url == '/resume/' %} active {% endif %}"><a href="{{ base_path }}/more/">More</a></li>
+        <li class="{% if page.url != '/resume/' %} active {% endif %}"><a href="{{ base_path }}/">Projects</a></li>
+        <li class="{% if page.url == '/resume/' %} active {% endif %}"><a href="{{ base_path }}/resume">Resume</a></li>
     </ul>
 </div>
 <!-- Script pointing to jekyll-search.js -->
