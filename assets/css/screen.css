@@ -1436,14 +1436,13 @@ body.page-template {
 .resume-name {
     margin-top: 50px;
     font-size: 35px;
-    font-weight: 500px;
+    font-weight: bold;
     text-align: center;
-    margin-bottom: 50px;
 }
 
 .resume-address { 
-    margin-top: 20px;
-    font-size: 20px;
+    margin-top: 30px;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -1465,7 +1464,7 @@ body.page-template {
 }
 
 .resume-category-title { 
-    font-weight: 500;
+    font-weight: bold;
     font-size: 20px;
     padding-bottom: 10px;
     border-bottom: 1px solid #505050;
@@ -1474,8 +1473,16 @@ body.page-template {
 }
 
 .resume-category-element-title { 
-    font-weight: 500;
+    font-weight: 600;
     font-size: 18px;
+}
+
+.resume-category-element-title-right { 
+    font-weight: 600;
+    font-size: 18px;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .italic-font { 
@@ -1483,13 +1490,16 @@ body.page-template {
 }
 
 .resume-category-element-rightdescription { 
+    padding-top: 10px;
     position: absolute;
     right: 0;
     top: 0;
 }
 
 .resume-category-element-description { 
-
+    padding-top: 10px;
+    font-weight: 400;
+    padding-left: 25px;
 }
 
 .resume-category-element-description-question { 
@@ -1538,8 +1548,9 @@ body.page-template {
     text-align: left;
 }
 
-#resume-experience ul {
-    padding-left: 20px !important;
+.resume-experience ul {
+    position: relative;
+    left: -15px;
 }
 
 #forkme {
