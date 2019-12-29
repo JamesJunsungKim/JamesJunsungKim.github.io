@@ -8,7 +8,7 @@ layout: home
     <strong class="subtitle"> All of the proejcts I've worked on are presented in a chronological order</strong>
     <div class = "timeline">
         <ul>
-            <li class= "timeline_element timeline_element--now ">
+            <!-- <li class= "timeline_element timeline_element--now ">
                 <div class="timeline_element-date">
                     <time class="timeline_element-date-text">Now</time>
                 </div>
@@ -25,7 +25,7 @@ layout: home
                         </ul>
                     </div>
                 </div>
-            </li>
+            </li> -->
     
             <li class= "timeline_element timeline_element--now ">
                 <div class="timeline_element-continuous-date">
@@ -35,21 +35,21 @@ layout: home
                 <div class="timeline_element-contents">
                     <div class="project-text">
                         <div class="project-title">Script to generate Unit Test for RIB files</div>
-                        <div class="project-description">After implementing the RIB architecture into the work's environment, I recommended that everyone in iOS team create a unit test code for our code.
+                        <div class="project-description">After implementing the RIB architecture into the project, it was too much to create since everything is fragmented. So, I created a script that reads the RIB folders, fetching code and generating the test code accordingly.
                             <br>
-                            But it involes a lot of boilerplate code so I created a script to automatically generate a unit test mock and test codes.
+                            The current version of script is to install necessary frameworks, customize configuration, and provide three modes from creating the test mock for a specific RIB to generating test code for the whold folder  
                         </div>
                         <strong>Features are as follows:</strong>
                         <ul class="project-stats-list">
-                            <li>Iterate over all RIB files and create unit test files if needed.</li>
+                            <li>Automatically, install necessary framwork if needed.</li>
+                            <li>Fetch and organize code, generating the unit test files accordingly.</li>
                             <li>Create a mock of every element in RIB structure.</li>
-                            <li>Create a test code of each element without only result part.</li>
                         </ul>
                     </div>
-                    <img src="/assets/images/random.png" class="project-image-horizontal">
+                    <!-- <img src="/assets/images/random.png" class="project-image-horizontal"> -->
     
-                    <a href="{{ base_path }}/projects/python/rib_test_generator" class="button button-gray">More details</a>
-                    <a href="https://github.com/uber/RIBs" class="button button-gray">View Code</a>
+                    <!-- <a href="{{ base_path }}/projects/python/rib_test_generator" class="button button-gray">More details</a>
+                    <a href="https://github.com/uber/RIBs" class="button button-gray">View Code</a> -->
     
                     <div class="project-technologies">
                         <div class="technologies-title">tag</div>
