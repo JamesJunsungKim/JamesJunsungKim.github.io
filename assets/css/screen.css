@@ -1425,6 +1425,13 @@ body.page-template {
     text-align: center;
 }
 
+li {
+    line-height: 1.6;
+}
+
+.resume-description-line {
+    margin-bottom: 5px;
+}
 
 .resume-content {
     margin: 30px;
@@ -1448,6 +1455,7 @@ body.page-template {
 
 .resume-education { 
     /* position: relative; */
+    padding-top: 5px;
     margin-top: 20px;
     margin-left: 35px;
     margin-right: 35px;
@@ -1460,6 +1468,7 @@ body.page-template {
 }
 
 .resume-experience-description {
+    margin-bottom: 25px;
     margin-left: 35px;
     margin-top: 20px;
     color:black;
@@ -1551,6 +1560,33 @@ body.page-template {
     /* font-weight: 400; */
 }
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    font-size: 14px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 7px;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
 .problem-element-description-answer {
     padding-top: 5px;
     padding-left: 20px;
@@ -1558,7 +1594,7 @@ body.page-template {
     text-align: left;
 }
 
-.resume-experience ul {
+.resume-content ul {
     position: relative;
     left: -15px;
 }
